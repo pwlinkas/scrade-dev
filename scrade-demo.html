@@ -2,43 +2,61 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scrade demo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scrade demo</title>
 
-    <link rel="stylesheet" href="scrade.min.css">
+  <link rel="stylesheet" href="scrade.min.css">
 
-    <style>
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-    </style>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    h3 {
+      font-weight: normal;
+    }
+  </style>
 </head>
 
 <body>
-    <div class="container">
-        <h1>Default</h1>
-        <h2 class="scrade">.scrade</h2>
-        <br>
+  <div class="container">
+    <h1>Animations</h1>
+    <h2>Default</h2>
+    <h3 class="scrade">.scrade</h3>
+    <br>
 
-        <h1>Slide in</h1>
-        <h2 class="scrade scrade-slideRight">.scrade-slideRight</h2>
-        <h2 class="scrade scrade-slideLeft">.scrade-slideLeft</h2>
-        <h2 class="scrade scrade-slideUp">.scrade-slideUp</h2>
-        <h2 class="scrade scrade-slideDown">.scrade-slideDown</h2>
-        <br>
+    <h2>Slide in</h2>
+    <h3 class="scrade scrade-slide-right">.scrade-slide-right</h3>
+    <h3 class="scrade scrade-slide-left">.scrade-slide-left</h3>
+    <h3 class="scrade scrade-slide-down">.scrade-slide-down</h3>
+    <h3 class="scrade scrade-slide-up">.scrade-slide-up</h3>
+    <br>
 
-        <h1>Duration classes</h1>
-        <h2 class="scrade scrade-slideRight scrade-d250">.scrade-d250</h2>
-        <h2 class="scrade scrade-slideRight scrade-d500">.scrade-d500</h2>
-        <h2 class="scrade scrade-slideRight scrade-d750">.scrade-d750</h2>
-        <h2 class="scrade scrade-slideRight scrade-d1000">.scrade-d1000</h2>
-        <h2 class="scrade scrade-slideRight scrade-d1250">.scrade-d1250</h2>
-        <h2 class="scrade scrade-slideRight scrade-d1500">.scrade-d1500</h2>
-        <h2 class="scrade scrade-slideRight scrade-d1750">.scrade-d1750</h2>
-        <h2 class="scrade scrade-slideRight scrade-d2000">.scrade-d2000</h2>
+    <h2>Scale</h2>
+    <div class="scrade scrade-grow" style="background-color: #eee; padding: 10px;">
+      <h3>.scrade-grow</h3>
     </div>
+    <div class="scrade scrade-shrink" style="background-color: #eee; padding: 10px;">
+      <h3>.scrade-shrink</h3>
+    </div>
+
+    <h1>Options</h1>
+    <h2>Duration classes</h2>
+    <h3 class="scrade scrade-slide-right scrade-d250">.scrade-d250</h3>
+    <h3 class="scrade scrade-slide-right scrade-d500">.scrade-d500</h3>
+    <h3 class="scrade scrade-slide-right scrade-d750">.scrade-d750</h3>
+    <h3 class="scrade scrade-slide-right scrade-d1000">.scrade-d1000</h3>
+    <h3 class="scrade scrade-slide-right scrade-d1250">.scrade-d1250</h3>
+    <h3 class="scrade scrade-slide-right scrade-d1500">.scrade-d1500</h3>
+    <h3 class="scrade scrade-slide-right scrade-d1750">.scrade-d1750</h3>
+    <h3 class="scrade scrade-slide-right scrade-d2000">.scrade-d2000</h3>
+  </div>
 </body>
 
 </html>

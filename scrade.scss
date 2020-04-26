@@ -1,89 +1,119 @@
+/* Defaults */
+$animation-duration: 1s;
+
 .scrade {
-    animation: scradeFadeIn 0.5s ease-in-out;
+  animation: scradeFadeIn $animation-duration ease-in-out;
 
-    /* Animations */
-    &.scrade-slideRight {
-        animation: scradeFadeIn 0.5s ease-in-out, scradeSlideRight 0.5s ease-in-out;
-    }
-    &.scrade-slideLeft {
-        animation: scradeFadeIn 0.5s ease-in-out, scradeSlideLeft 0.5s ease-in-out;
-    }
-    &.scrade-slideUp {
-        animation: scradeFadeIn 0.5s ease-in-out, scradeSlideUp 0.5s ease-in-out;
-    }
-    &.scrade-slideDown {
-        animation: scradeFadeIn 0.5s ease-in-out, scradeSlideDown 0.5s ease-in-out;
-    }
+  /* Animations */
+  &.scrade-slide-right {
+    animation: scradeFadeIn $animation-duration ease-in-out, scradeSlideRight $animation-duration ease-in-out;
+  }
+  &.scrade-slide-left {
+    animation: scradeFadeIn $animation-duration ease-in-out, scradeSlideLeft $animation-duration ease-in-out;
+  }
+  &.scrade-slide-up {
+    animation: scradeFadeIn $animation-duration ease-in-out, scradeSlideUp $animation-duration ease-in-out;
+  }
+  &.scrade-slide-down {
+    animation: scradeFadeIn $animation-duration ease-in-out, scradeSlideDown $animation-duration ease-in-out;
+  }
 
-    /* Duration */
-    &.scrade-d250 {
-        animation-duration: 0.25s;
-    }
-    &.scrade-d500 {
-        animation-duration: 0.5s;
-    }
-    &.scrade-d750 {
-        animation-duration: 0.75s;
-    }
-    &.scrade-d1000 {
-        animation-duration: 1s;
-    }
-    &.scrade-d1250 {
-        animation-duration: 1.25s;
-    }
-    &.scrade-d1500 {
-        animation-duration: 1.5s;
-    }
-    &.scrade-d1750 {
-        animation-duration: 1.75s;
-    }
-    &.scrade-d2000 {
-        animation-duration: 2s;
-    }
+  &.scrade-grow {
+    animation: scradeFadeIn $animation-duration ease-in-out, scradeGrow $animation-duration ease-in-out;
+  }
+  &.scrade-shrink {
+    animation: scradeFadeIn $animation-duration ease-in-out, scradeShrink $animation-duration ease-in-out;
+  }
 
-    /* Animation keyframes */
-    @keyframes scradeFadeIn {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
+  /* Duration */
+  &.scrade-d250 {
+    animation-duration: 0.25s;
+  }
+  &.scrade-d500 {
+    animation-duration: 0.5s;
+  }
+  &.scrade-d750 {
+    animation-duration: 0.75s;
+  }
+  &.scrade-d1000 {
+    animation-duration: 1s;
+  }
+  &.scrade-d1250 {
+    animation-duration: 1.25s;
+  }
+  &.scrade-d1500 {
+    animation-duration: 1.5s;
+  }
+  &.scrade-d1750 {
+    animation-duration: 1.75s;
+  }
+  &.scrade-d2000 {
+    animation-duration: 2s;
+  }
 
-    @keyframes scradeSlideRight {
-        from {
-            transform: translateX(-25px);
-        }
-        to {
-            transform: translateX(0);
-        }
+  /* Animation keyframes */
+  @keyframes scradeFadeIn {
+    from {
+      opacity: 0;
     }
+    to {
+      opacity: 1;
+    }
+  }
 
-    @keyframes scradeSlideLeft {
-        from {
-            transform: translateX(25px);
-        }
-        to {
-            transform: translateX(0);
-        }
+  @keyframes scradeSlideRight {
+    from {
+      transform: translateX(-25px);
     }
+    to {
+      transform: translateX(0);
+    }
+  }
 
-    @keyframes scradeSlideUp {
-        from {
-            transform: translateY(25px);
-        }
-        to {
-            transform: translateY(0);
-        }
+  @keyframes scradeSlideLeft {
+    from {
+      transform: translateX(25px);
     }
+    to {
+      transform: translateX(0);
+    }
+  }
 
-    @keyframes scradeSlideDown {
-        from {
-            transform: translateY(-25px);
-        }
-        to {
-            transform: translateY(0);
-        }
+  @keyframes scradeSlideUp {
+    from {
+      transform: translateY(25px);
     }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scradeSlideDown {
+    from {
+      transform: translateY(-25px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scradeGrow {
+    from {
+      transform: scale(0.9, 0.9);
+      transform-origin: center;
+    }
+    to {
+      transform: scale(1, 1);
+    }
+  }
+
+  @keyframes scradeShrink {
+    from {
+      transform: scale(1.1, 1.1);
+      transform-origin: center;
+    }
+    to {
+      transform: scale(1, 1);
+    }
+  }
 }
