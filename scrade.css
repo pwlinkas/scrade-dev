@@ -62,6 +62,22 @@
   animation-duration: 2s;
 }
 
+.scrade.scrade-ease {
+  animation-timing-function: ease;
+}
+
+.scrade.scrade-ease-in {
+  animation-timing-function: ease-in;
+}
+
+.scrade.scrade-ease-out {
+  animation-timing-function: ease-out;
+}
+
+.scrade.scrade-ease-in-out {
+  animation-timing-function: ease-in-out;
+}
+
 @keyframes scradeFadeIn {
   from {
     opacity: 0;
@@ -120,7 +136,6 @@
 @keyframes scradeShrink {
   from {
     transform: scale(1.1, 1.1);
-    transform-origin: center;
   }
   to {
     transform: scale(1, 1);

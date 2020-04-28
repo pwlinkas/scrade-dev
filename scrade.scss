@@ -51,6 +51,19 @@ $animation-duration: 1s;
     animation-duration: 2s;
   }
 
+  &.scrade-ease {
+    animation-timing-function: ease;
+  }
+  &.scrade-ease-in {
+    animation-timing-function: ease-in;
+  }
+  &.scrade-ease-out {
+    animation-timing-function: ease-out;
+  }
+  &.scrade-ease-in-out {
+    animation-timing-function: ease-in-out;
+  }
+
   /* Animation keyframes */
   @keyframes scradeFadeIn {
     from {
@@ -110,7 +123,6 @@ $animation-duration: 1s;
   @keyframes scradeShrink {
     from {
       transform: scale(1.1, 1.1);
-      transform-origin: center;
     }
     to {
       transform: scale(1, 1);
