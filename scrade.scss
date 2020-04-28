@@ -1,7 +1,11 @@
 /* Defaults */
 $animation-duration: 1s;
 
-.scrade {
+.scrade:not(.scrade-go) {
+  opacity: 0;
+}
+
+.scrade.scrade-go {
   animation: scradeFadeIn $animation-duration ease-in-out;
 
   /* Animations */

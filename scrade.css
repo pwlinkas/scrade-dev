@@ -1,80 +1,84 @@
 /* Defaults */
-.scrade {
+.scrade:not(.scrade-go) {
+  opacity: 0;
+}
+
+.scrade.scrade-go {
   animation: scradeFadeIn 1s ease-in-out;
   /* Animations */
   /* Duration */
   /* Animation keyframes */
 }
 
-.scrade.scrade-slide-right {
+.scrade.scrade-go.scrade-slide-right {
   animation: scradeFadeIn 1s ease-in-out, scradeSlideRight 1s ease-in-out;
 }
 
-.scrade.scrade-slide-left {
+.scrade.scrade-go.scrade-slide-left {
   animation: scradeFadeIn 1s ease-in-out, scradeSlideLeft 1s ease-in-out;
 }
 
-.scrade.scrade-slide-up {
+.scrade.scrade-go.scrade-slide-up {
   animation: scradeFadeIn 1s ease-in-out, scradeSlideUp 1s ease-in-out;
 }
 
-.scrade.scrade-slide-down {
+.scrade.scrade-go.scrade-slide-down {
   animation: scradeFadeIn 1s ease-in-out, scradeSlideDown 1s ease-in-out;
 }
 
-.scrade.scrade-grow {
+.scrade.scrade-go.scrade-grow {
   animation: scradeFadeIn 1s ease-in-out, scradeGrow 1s ease-in-out;
 }
 
-.scrade.scrade-shrink {
+.scrade.scrade-go.scrade-shrink {
   animation: scradeFadeIn 1s ease-in-out, scradeShrink 1s ease-in-out;
 }
 
-.scrade.scrade-d250 {
+.scrade.scrade-go.scrade-d250 {
   animation-duration: 0.25s;
 }
 
-.scrade.scrade-d500 {
+.scrade.scrade-go.scrade-d500 {
   animation-duration: 0.5s;
 }
 
-.scrade.scrade-d750 {
+.scrade.scrade-go.scrade-d750 {
   animation-duration: 0.75s;
 }
 
-.scrade.scrade-d1000 {
+.scrade.scrade-go.scrade-d1000 {
   animation-duration: 1s;
 }
 
-.scrade.scrade-d1250 {
+.scrade.scrade-go.scrade-d1250 {
   animation-duration: 1.25s;
 }
 
-.scrade.scrade-d1500 {
+.scrade.scrade-go.scrade-d1500 {
   animation-duration: 1.5s;
 }
 
-.scrade.scrade-d1750 {
+.scrade.scrade-go.scrade-d1750 {
   animation-duration: 1.75s;
 }
 
-.scrade.scrade-d2000 {
+.scrade.scrade-go.scrade-d2000 {
   animation-duration: 2s;
 }
 
-.scrade.scrade-ease {
+.scrade.scrade-go.scrade-ease {
   animation-timing-function: ease;
 }
 
-.scrade.scrade-ease-in {
+.scrade.scrade-go.scrade-ease-in {
   animation-timing-function: ease-in;
 }
 
-.scrade.scrade-ease-out {
+.scrade.scrade-go.scrade-ease-out {
   animation-timing-function: ease-out;
 }
 
-.scrade.scrade-ease-in-out {
+.scrade.scrade-go.scrade-ease-in-out {
   animation-timing-function: ease-in-out;
 }
 
